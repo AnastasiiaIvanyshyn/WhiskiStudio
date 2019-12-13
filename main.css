@@ -111,28 +111,24 @@ nav{
 .list {
     background-color: rgb(63, 5, 24);
     color: white;
-    margin-bottom: 3px; 
-    padding: 20px 50px;
     line-height: 30px;
     text-align: center;
-}
-.bla {
-    position: absolute;
-    top: 12px;
 }
 
 
 .list li {
     background-color: rgb(23, 0, 77);
-    margin-bottom: 3px;
-    padding: 20px 50px;
 }
 .sub-menu {
     display: none;
     left: 100%;
-    margin-top: -50px;
+    margin-top: -40px;
 }
 
+.last-menu .sub-menu {
+    right: 100%;
+    left: unset;
+}
 
 .list:hover .sub-menu {
     display: block;
@@ -140,15 +136,20 @@ nav{
 
 .menu li{
     white-space: nowrap;
-    height: 30px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    margin-bottom: 3px;
 }
 ul .menu {
-word-spacing: 0;
+    word-spacing: 0;
 }
-.list .color-brows .level2{
+
+.list .color-brows .level2,
+.list .list .level2{
     display: none;
 }
-.color-brows:hover .level2{
+.color-brows:hover .level2,
+.list .list:hover .level2{
     display: block;
 }
 .menu {
@@ -159,16 +160,3 @@ word-spacing: 0;
 .cherif-li:hover .menu{
     display: block;
 }
-/* .cherif-menu * {
-    z-index: -100;
-}
-
-.content {
-    top: 1000px;
-    position: relative;
-}
-.cherif-ul .cherif-li .menu {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-} */
