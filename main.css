@@ -8,7 +8,8 @@ header {
     width: 100%;
     display: block;
 }
-.logo h1{
+
+.logo h1 {
     user-select: none;
     height: 300px;
     color: white;
@@ -26,11 +27,12 @@ header {
     -webkit-background-clip: text;
 }
 
-nav{
+nav {
     display: inline;
     text-align: center;
     height: 100px;
 }
+
 .cherif-menu .cherif-ul .cherif-li a {
     display: block;
     color: white;
@@ -40,30 +42,37 @@ nav{
     height: 100px;
     font-family: 'Russo One', sans-serif;
 }
+
 .cherif-menu {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
+
 .cherif-menu .cherif-ul {
     font-family: 'Stencil', arial;
     word-spacing: 30px;
 }
+
 .cherif-menu .cherif-li {
     display: inline-block;
 }
-.cherif-menu a{
+
+.cherif-menu a {
     padding: 24px 10px;
 }
-.cherif-menu .cherif-ul .cherif-li a:hover{
+
+.cherif-menu .cherif-ul .cherif-li a:hover {
     transition: 0.5s;
-    background-color:;
+    background-color: ;
     border-bottom: 10px solid #09ab44;
-} 
-*, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-
+}
 
 .contact {
     color: white;
@@ -73,41 +82,48 @@ nav{
     font-size: 20px;
     font-family: 'Cookie', cursive;
 }
-.contact img{
+
+.contact img {
     height: 30px;
     width: 30px;
     float: left;
     margin: 0 10px;
 }
+
 .contact a {
     color: white;
-    text-decoration: none;  
+    text-decoration: none;
 }
-.contact th, .contact td {
+
+.contact th,
+.contact td {
     padding: 10px 30px;
     white-space: nowrap;
 }
+
 .serif {
     font-size: 25px;
 }
-.date{
+
+.date {
     color: white;
 }
 
-.slider img{
+.slider img {
     width: 80%;
-   height: 900px;
+    height: 900px;
 }
 
-.row {   
-    margin: 0 !important; 
+.row {
+    margin: 0 !important;
 }
 
-
-.menu, .sub-menu {
+.menu,
+.sub-menu {
     list-style: none;
     position: absolute;
 }
+
 .list {
     background-color: rgb(63, 5, 24);
     color: white;
@@ -115,10 +131,10 @@ nav{
     text-align: center;
 }
 
-
 .list li {
     background-color: rgb(23, 0, 77);
 }
+
 .sub-menu {
     display: none;
     left: 100%;
@@ -134,29 +150,33 @@ nav{
     display: block;
 }
 
-.menu li{
+.menu li {
     white-space: nowrap;
     box-sizing: border-box;
     padding: 10px 30px;
     margin-bottom: 3px;
 }
+
 ul .menu {
     word-spacing: 0;
 }
 
 .list .color-brows .level2,
-.list .list .level2{
+.list .list .level2 {
     display: none;
 }
+
 .color-brows:hover .level2,
-.list .list:hover .level2{
+.list .list:hover .level2 {
     display: block;
 }
+
 .menu {
     display: none;
     z-index: 10;
     box-sizing: content-box;
 }
-.cherif-li:hover .menu{
+
+.cherif-li:hover .menu {
     display: block;
 }
