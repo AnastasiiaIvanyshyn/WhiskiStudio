@@ -187,3 +187,60 @@ word-spacing: 0;
 li {
     padding: 5px 15px !important;
 }
+
+.menu-block-header {
+    color: white;
+    text-align: center;
+}
+
+.content-block-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.content-block {
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+    color: cornflowerblue;
+    display: inline-block;
+}
+
+.content-block-list {
+    margin: 20px;
+    padding: 10px;
+    background-color: azure;
+    height: 100%;
+    position: relative;
+}
+
+.content-block li {
+    padding: 10px 20px;
+    list-style-type: none;
+}
+
+.content-block li:before {
+    content: '✓';
+    width: 20px;
+    display: inline-block;
+}
+
+.content-wrapper {
+    background: brown;
+    display: inline-block;
+}
+
+.content-block-list li:hover .sub-menu {
+    display: block;
+}
+
+.content-block .sub-menu.level2 {
+    top: 0;
+    left: 100%;
+}
+.menu-block {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
