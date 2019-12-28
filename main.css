@@ -39,7 +39,7 @@ nav {
     text-decoration: none;
     font-size: 30px;
     list-style: none;
-    height: 100px;
+    height: 95px;
     font-family: 'Russo One', sans-serif;
 }
 
@@ -65,13 +65,13 @@ nav {
     border-bottom: 10px solid #09ab44;
 }
 
-*,
-*:before,
+*, 
+*:before, 
 *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+  }
 
 .contact {
     color: white;
@@ -91,10 +91,10 @@ nav {
 
 .contact a {
     color: white;
-    text-decoration: none;
+    text-decoration: none;  
 }
 
-.contact th,
+.contact th, 
 .contact td {
     padding: 10px 30px;
     white-space: nowrap;
@@ -110,39 +110,55 @@ nav {
 
 .slider img {
     width: 80%;
-    height: 900px;
+   height: 900px;
 }
 
-.row {
-    margin: 0 !important;
+.row {   
+    margin: 0 !important; 
 }
 
-.menu,
+.menu, 
 .sub-menu {
     list-style: none;
     position: absolute;
 }
 
 .list {
-    background-color: rgb(63, 5, 24);
+    background-color: black;
+    opacity: 1;
     color: white;
+    margin-bottom: 3px; 
+    padding: 20px 50px;
     line-height: 30px;
     text-align: center;
 }
 
+.list:hover{
+    background-color: #09ab44;
+    
+    
+}
+
+.bla {
+    position: absolute;
+    top: 12px;
+}
+
 .list li {
-    background-color: rgb(23, 0, 77);
+    background-color: 	#0000CD;
+    margin-bottom: 3px;
+    padding: 20px 50px;
+}
+
+.list li:hover {
+    background-color: black;
+    opacity: 0.7;
 }
 
 .sub-menu {
     display: none;
     left: 100%;
-    margin-top: -40px;
-}
-
-.last-menu .sub-menu {
-    right: 100%;
-    left: unset;
+    margin-top: -35px;
 }
 
 .list:hover .sub-menu {
@@ -151,13 +167,11 @@ nav {
 
 .menu li {
     white-space: nowrap;
-    box-sizing: border-box;
-    padding: 10px 30px;
-    margin-bottom: 3px;
+    height: 30px;
 }
 
 ul .menu {
-    word-spacing: 0;
+word-spacing: 0;
 }
 
 .list .color-brows .level2,
@@ -178,4 +192,65 @@ ul .menu {
 
 .cherif-li:hover .menu {
     display: block;
+}
+
+li {
+    padding: 5px 15px !important;
+}
+
+.menu-block-header {
+    color: white;
+    text-align: center;
+}
+
+.content-block-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.content-block {
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+    color: cornflowerblue;
+    display: inline-block;
+}
+
+.content-block-list {
+    margin: 20px;
+    padding: 10px;
+    background-color: azure;
+    height: 100%;
+    position: relative;
+}
+
+.content-block li {
+    padding: 10px 20px;
+    list-style-type: none;
+}
+
+.content-block li:before {
+    content: 'âœ“';
+    width: 20px;
+    display: inline-block;
+}
+
+.content-wrapper {
+    background: brown;
+    display: inline-block;
+}
+
+.content-block-list li:hover .sub-menu {
+    display: block;
+}
+
+.content-block .sub-menu.level2 {
+    top: 0;
+    left: 100%;
+}
+.menu-block {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
