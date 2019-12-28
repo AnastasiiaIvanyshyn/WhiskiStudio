@@ -254,3 +254,30 @@ li {
     display: flex;
     flex-wrap: wrap;
 }
+
+/***************
+SERVICES start
+***************/
+
+.services-list {
+    padding-left: 10px;
+    color: white;
+}
+
+.services-list > li {
+    list-style-type: none;
+}
+
+.services-sub-list {
+    padding-left: 40px;
+}
+
+.services-heading {
+    padding: 20px 50px;
+    text-align: center;
+    color: white;
+}
+
+/***************
+SERVICES end
+***************/
