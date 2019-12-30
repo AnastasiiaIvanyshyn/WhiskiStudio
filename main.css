@@ -9,7 +9,12 @@ header {
     display: block;
 }
 
+.logo {
+    text-align: center;
+}
+
 .logo h1 {
+    display: inline-block;
     user-select: none;
     height: 300px;
     color: white;
@@ -25,6 +30,10 @@ header {
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
+}
+
+.logo a {
+    text-decoration: none;
 }
 
 nav {
@@ -231,7 +240,7 @@ li {
 }
 
 .content-block li:before {
-    content: 'âœ“';
+    content: '✓'; 
     width: 20px;
     display: inline-block;
 }
@@ -249,6 +258,7 @@ li {
     top: 0;
     left: 100%;
 }
+
 .menu-block {
     color: white;
     display: flex;
@@ -256,28 +266,28 @@ li {
 }
 
 /***************
-SERVICES start
+pages
 ***************/
 
-.services-list {
+.simple-list {
     padding-left: 10px;
     color: white;
 }
 
-.services-list > li {
+.simple-list > li {
     list-style-type: none;
 }
 
-.services-sub-list {
+.simple-sub-list {
     padding-left: 40px;
 }
 
-.services-heading {
+.page-main-heading {
     padding: 20px 50px;
     text-align: center;
     color: white;
 }
 
 /***************
-SERVICES end
+pages
 ***************/
