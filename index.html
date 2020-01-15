@@ -11,88 +11,28 @@
     <link href="http://uk.allfont.net/allfont.css?fonts=stencil" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
     <title>Whiski studio - салон краси.</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">
-                <h1>Whiski<br><span>studio</span></h1>
-            </a>
+            <h1>
+                <a href="">Whiski<br>
+                    <span>studio</span></a>
+            </h1>
         </div>
-        <div class="cherif-menu">
-            <nav>
-                <ul class="cherif-ul">
-                    <li class="cherif-li"><a href="">Послуги</a>
-                        <ul class="menu">
-                            <li class="list l1">
-                                <div class="style-text">Перукарські послуги</div>
-                                <ul class="sub-menu sm1">
-                                    <li>Жіночі стрижки</li>
-                                    <li>Чоловічі стрижки</li>
-                                </ul>
-                            </li>
-                            <li class="list l2">Косметолог
-                                <ul class="sub-menu sm2">
-                                    <li>Глибоке очищення</li>
-                                    <li>Чистка</li>
-                                    <li>Контурна пластика</li>
-                                    <li>Кислотні пілінги</li>
-                                    <li>Масажі (обличчя, шия, декольте)</li>
-                                    <li>Карбокситерапія (обличчя, шиї, декольте)</li>
-                                    <li>Карбонова маска (обличчя, шия, декольте)</li>
-                                    <li>Ультразвукова терапія</li>
-                                    <li>Маски</li>
-                                    <li>Догляд</li>
-                                </ul>
-                            </li>
-                            <li class="list l3">Ін'єкції краси
-                                <ul class="sub-menu sm3">
-                                    <li>Батулінотерапія</li>
-                                    <li>Мезонитки (лістинг обличчя, шиї, декольте, тіла)</li>
-                                    <li>Біоревіталізація</li>
-                                    <li>Мезотерапія</li>
-                                    <li>ЕМЕТ</li>
-                                    <li>Догляд за тілом</li>
-                                </ul>
-                            </li>
-                            <li class="list l4">Бровіст
-                                <ul class="sub-menu sm4">
-                                    <li>Корекція брів</li>
-                                    <li class="color-brows">Фарбування брів
-                                        <ul class="sub-menu sm5 level2">
-                                            <li>Фарбою</li>
-                                            <li>Хною</li>
-                                        </ul>
-                                    </li>
-                                    <li>Фарбування вій</li>
-                                </ul>
-                            </li>
-                            <li class="list l5">Шугаринг \ віск</li>
-                            <li class="list l6">Всі види перманентного макіяжу
-                                <ul class="sub-menu sm6">
-                                    <li>Губи</li>
-                                    <li>Брови</li>
-                                    <li>Повіки</li>
-                                    <li>ВВ Глоу</li>
-                                </ul>
-                            </li>
-                            <li class="list l7">Апарати косметології
-                                <ul class="sub-menu sm7">
-                                    <li>RF ліфтинг</li>
-                                    <li>Вакуумно-роликовий масаж</li>
-                                </ul>
-                            </li>
-                            <li class="list l8">Маникюр \ педикюр</li>
-                        </ul>
-                    </li>
-                    <li class="cherif-li"><a href="pages/study.html">Навчання</a></li>
-                    <li class="cherif-li"><a href="">Відгуки</a></li>
-                    <li class="cherif-li"><a href="#contact">Контакти</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="menu">
+                <a href="pages/services.html">Послуги</a>
+                <a href="pages/study.html">Навчання</a>
+                <a href="#contact">Контакти</a>
+            </div>
+        </nav>
+       
     </header>
 
 
@@ -138,7 +78,35 @@
 			</div>
 		</div>
     </footer>
-    
+    <script>
+        // Create a clone of the menu, right next to original.
+        $('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
+
+        scrollIntervalID = setInterval(stickIt, 10);
+
+
+        function stickIt() {
+
+            var orgElementPos = $('.original').offset();
+            orgElementTop = orgElementPos.top;
+
+            if ($(window).scrollTop() >= (orgElementTop)) {
+                // scrolled past the original position; now only show the cloned, sticky element.
+
+                // Cloned element should always have same left position and width as original element.     
+                orgElement = $('.original');
+                coordsOrgElement = orgElement.offset();
+                leftOrgElement = coordsOrgElement.left;
+                widthOrgElement = orgElement.css('width');
+                $('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement).show();
+                $('.original').css('visibility', 'hidden');
+            } else {
+                // not scrolled past the menu; only show the original menu.
+                $('.cloned').hide();
+                $('.original').css('visibility', 'visible');
+            }
+        }
+    </script>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js"></script>

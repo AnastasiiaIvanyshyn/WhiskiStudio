@@ -2,14 +2,14 @@ body {
     background-image: url("image/bg-body.jpg");
 }
 header {
-    background: url("image/2.jpg");
-    height: 400px;
-    width: 100%;
-    display: block;
+    background-image: url('image/2.jpg');
 }
-.logo {
-    text-align: center;
-}
+* {
+    margin:0; 
+    padding:0;}
+    .logo {
+        text-align: center;
+    }
 .logo h1 {
     display: inline-block;
     user-select: none;
@@ -22,40 +22,43 @@ header {
     font-weight: 100;
     line-height: 0.7em;
     padding-top: 25px;
+}
+@media only screen and (max-width: 768px) { 
+    .logo h1 {
+        font-size: 88px;
+        height: 190px;
+    }
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
     background-image: url(https://media.giphy.com/media/l0MYwXxKiwW39Dwcw/giphy.gif);
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-}
-.logo a {
-    text-decoration: none;
-}
-
-/* menu */
-.cherif-menu {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-.cherif-menu .cherif-ul {
+    }
+.menu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-family: 'Stencil', arial;
     word-spacing: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:#fff; 
+    height:100px; 
+    letter-spacing:2px; 
+    width:100%;
 }
-.cherif-menu .cherif-ul .cherif-li a {
-    display: flex;
-    height: 95px;
+.menu a {
+    padding: 20px 10px;
     color: white;
     text-decoration: none;
     font-size: 30px;
-    list-style: none;
-    font-family: 'Russo One', sans-serif;
+    /* font-family: 'Russo One', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
 }
-.cherif-menu a {
-    padding: 24px 10px;
-}
-.cherif-menu .cherif-ul .cherif-li a:hover {
+.menu a:hover {
     transition: 0.5s;
     border-bottom: 5px solid #195E01;
 }
@@ -67,7 +70,7 @@ header {
     padding: 0;
   }
 
-.date {
+  .date {
     color: white;
 }
 .slider img {
@@ -76,155 +79,6 @@ header {
 }
 .row {   
     margin: 0 !important; 
-}
-.menu, 
-.sub-menu {
-    list-style: none;
-    position: absolute;
-}
-.list {
-    background-color: black;
-    opacity: 1;
-    color: white;
-    margin-bottom: 3px; 
-    padding: 20px 50px;
-    line-height: 30px;
-    text-align: center;
-    font-family: 'Cookie', cursive;
-    font-size: 20px;
-}
-.list:hover{
-    background-color: #289404;   
-}
-.list li {
-    background-color: white;
-    color: black;
-    margin-bottom: 3px;
-    padding: 20px 50px;
-}
-.list li:hover {
-   color: white;
-   background-color: black;
-}
-.sub-menu {
-    display: none;
-    left: 100%;
-    margin-top: -35px;
-}
-.list:hover .sub-menu {
-    display: block;
-}
-.list .color-brows .level2,
-.list .list .level2 {
-    display: none;
-}
-.color-brows:hover .level2,
-.list .list:hover .level2 {
-    display: block;
-}
-.menu {
-    display: none;
-    z-index: 10;
-    box-sizing: content-box;
-}
-.menu li {
-    white-space: nowrap;
-    height: 30px;
-}
-ul .menu {
-word-spacing: 0;
-}
-.cherif-li:hover .menu {
-    display: block;
-}
-li {
-    padding: 5px 15px !important;
-}
-
-/* learning*/
-.learning {
-    background-color: #0f0f0f;
-    color: white;
-}
-.all-info-learn {
-    text-align: center;
-}
-.all-info-learn li {
-    list-style: none;
-    font-style: italic;
-    text-align: justify;
-}
-.header-info-learn {
-  padding: 20px 0; 
-  font-family: 'Cookie', cursive;
-}
-.info-learn {
-    display: flex;
-    flex-wrap: wrap;
-}
-.all-info-learn li::before {
-    content: '✔';
-    width: 20px;
-    display: inline-block;
-    color: #279E00;
-}
-.info-two li {
-    text-align: center;
-}
-.info-three li {
-    text-align: center;
-}
-.info-four li {
-    text-align: center;
-}
-.font-info {
-    color: #289404;
-    font-family: 'Cookie', cursive;
-    font-size: 20px;
-}
-.small-slide img{
-    width: 100px;
-    height: 100px;
-}
-.info-learn > div {
-    flex: 1 0 300px;
-}
-.list-cosmetology {
-    display: flex;
-}
-.first-line-cosmetology {
-    display: flex;
-    flex-wrap: wrap;
-}
-.first-line-cosmetology > div, 
-.second-line-cosmetology > div {
-    flex: 1 0 300px;
-}
-.all-learn-cosmetology li {
-    list-style: none;
-    font-style: italic;
-    text-align: justify;
-}
-.all-learn-cosmetology li::before {
-    content: '●';
-    width: 20px;
-    display: inline-block;
-    color: #279E00;
-}
-.all-learn-cosmetology .font-info::before{
-    content: '►';
-    width: 20px;
-    display: inline-block;
-    color: #279E00;
-}
-.second-line-cosmetology {
-    display: flex;
-    flex-wrap: wrap;
-}
-.header-cosmetology {
-    text-align: center;
-    padding: 30px 0 20px 0 ;
-    font-family: 'Cookie', cursive;
 }
 
 /* button */
@@ -291,4 +145,267 @@ li {
 }
 .adress p {
     font-size: 20px;
+}
+
+/*page services */
+/* block 1 */
+.services-menu-dark {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    background-color: #0f0f0f;
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    font-family: 'Bad Script', cursive;
+}
+.list-services-menu {
+    padding: 40px 20px;
+}
+.list-services-menu li {
+    list-style: none;
+    font-size: 20px;
+}
+.list-services-menu ul a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.list-services-menu ul a:active {
+    color: #289404;
+}
+.list-services-menu ul a:hover{
+    color: #289404;
+}
+.list-services-menu ul a::before{
+    content: '►';
+    width: 20px;
+    color: #289404;
+    padding-right: 5px;
+}
+.img-top {
+    width:400px;
+    height: 150px;
+}
+.page-services-menu h1 {
+    text-align: center;
+    padding: 25px 0 25px 0;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+}
+.img-bot {
+    height: 130px;
+    width: 450px;
+}
+/* block 2 */
+.hairdressing-services {
+    text-align: center;
+}
+.hairdressing-services img {
+    height: 200px;
+    width: 200px;
+}
+.women-hairdressing-services, 
+.men-hairdressing-services {
+    margin: 0 50px;
+}
+
+
+/* block 3 */
+.menu-cosmetology-services ul li::before {
+    content: '✔';
+    width: 20px;
+    color: #289404;
+    padding-right: 5px;
+} 
+
+/* block 4*/
+.menu-beauty-injections ul li::before {
+    content: '✔';
+    width: 20px;
+    color: #289404;
+    padding-right: 5px;
+}
+
+/* block 5 */
+.sugaring-text {
+    text-align: center;
+}
+.sugaring-image img {
+    margin: 40px 40px;
+    height: 200px;
+    width: 200px;
+}
+
+/* block 6 */
+
+/* block 7*/
+.make h2 {
+    text-align: center;
+}
+.make img {
+    margin: 20px 20px;
+    height: 200px;
+    width: 200px;
+}
+
+/* block 8 */
+.apparatus h2 {
+    text-align: center;
+}
+.apparatus img {
+    
+    height: 200px;
+    width: 200px;
+}
+/* block 9*/
+.manicure {
+    margin: 20px 20px;
+    height: 200px;
+    width: 200px; 
+}
+
+/* до всіх блоків */
+.services-menu {
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    font-family: 'Bad Script', cursive;
+    padding: 50px 0 50px 0;
+}
+.block-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.block-two, 
+.block-four,
+.block-six,
+.block-eight {
+    color: black;
+    background-color: #EAEAEA;
+}
+.block-three, 
+.block-five,
+.block-seven,
+.block-nine {
+    color: white;
+    background-color: #0f0f0f;
+}
+.title-pages {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.row-pages-left{
+    margin-right: 20px;
+}
+.row-pages-right {
+    margin-left: 20px;
+}
+.block-flex ul li {
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+}
+.block-flex ul li::before{
+    content: '✔';
+    width: 20px;
+    color: #289404;
+    padding-right: 5px;
+}
+.block-flex .sub-list li::before{
+    content: '●';
+    width: 20px;
+    color: #289404;
+    padding-right: 5px;
+}
+
+/* study */
+.menu-study {
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    font-family: 'Bad Script', cursive;
+}
+.menu-study ul li {
+    list-style: none;
+}
+.menu-study ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.menu-study ul li::before{
+    content: '►';
+    width: 20px;
+    color: #289404;
+    padding-right: 5px;
+}
+.study img{
+    margin-top: 50px;
+}
+.study {
+    padding: 10px 40px;
+    text-align: center;
+}
+.study-cosmetology {
+    padding: 10px 40px;
+}
+
+/* block 2-study */
+.for-who h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+/* block 3-study*/
+.row-doc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* block 4-study*/
+
+/* block 5-study*/
+.header-advantages a {
+    text-decoration: none;
+    color: white;
+}
+.advantages {
+    line-height: 2;
+}
+/* до всіх блоків навчання */
+.block-study-two,
+.block-study-four {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #EAEAEA;
+    color: black;
+    font-family: 'Bad Script', cursive;
+}
+.block-study-three,
+.block-study-five {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #0f0f0f;
+    color: white;
+    font-family: 'Bad Script', cursive;
+}
+.row-left,
+.row-right {
+    padding: 20px 40px;
+}
+.list-style ul li {
+    font-size: 20px;
+    list-style: none;
+}
+.list-style ul li::before {
+    content: '✔';
+    width: 20px;
+    color: #289404;
+    padding-right: 5px;
+}
+.size-img {
+    height: 200px;
+    width: 200px;
 }
