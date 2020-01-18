@@ -28,7 +28,30 @@ header {
         font-size: 88px;
         height: 190px;
     }
+    
+    nav .menu {
+        height: 60px;
+    }
+    .for-who li{
+        display: block;
+    }
+    .for-who ul {
+        display: inline-block;
+        text-align: left;
+        padding: 0 10px 0 20px;
+    }
+    .img-top {
+        width: 350px;
+        height: 110px;
+        margin: 0 50px;
+    }
+    .img-bot {
+        height: 102px;
+        width: 394px;
+        margin: 0 50px;
+    }
 }
+
 
 .logo a {
     color: white;
@@ -54,8 +77,7 @@ header {
     padding: 20px 10px;
     color: white;
     text-decoration: none;
-    font-size: 30px;
-    /* font-family: 'Russo One', sans-serif;*/
+    font-size: 4vw;
     font-family: 'Oswald', sans-serif;
 }
 .menu a:hover {
@@ -81,22 +103,6 @@ header {
     margin: 0 !important; 
 }
 
-/* button */
-.btn {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.btn input {
-    font-family: 'Cookie', cursive;
-    font-size: 20px;
-    border: 1px solid white;
-    color: white;
-    background-color: #0f0f0f;
-    padding: 20px;
-    margin: 20px 0;
-}
-
 /*footer*/
 .block {
     font-size: 25px;
@@ -105,13 +111,14 @@ header {
 .contact-footer {
     color: white;
     padding: 30px 0;
-    font-family: 'Cookie', cursive;
+   /* font-family: 'Cookie', cursive; */
+   font-family: 'Oswald', sans-serif;
 }
 .contact-footer img{
     height: 30px;
     width: 30px;
     float: left;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
 }
 .contact-footer a {
     color: white;
@@ -131,22 +138,34 @@ header {
     text-align: center;
     font-size: 25px;
 }
-.number-phone {
-    margin: 0 50px;
-}
-.social-networks {
-    margin: 0 50px;
-}
-.social-networks p {
-    font-size: 30px;
-}
+.number-phone,
+.social-networks,
 .adress {
     margin: 0 50px;
 }
-.adress p {
+.center-block {
+    padding-left: 20px;
+}
+.block p {
     font-size: 20px;
 }
-
+.block span {
+    padding: 0;
+    font-size: 18px;
+}
+.block p:hover{
+    color: #289404;
+}
+.block p:active{
+    color: #289404;
+}
+.number-phone img {
+    position: relative;
+    top: 10px;
+}
+.adress-block {
+    padding-right: 30px;
+}
 /*page services */
 /* block 1 */
 .services-menu-dark {
@@ -196,6 +215,7 @@ header {
     height: 130px;
     width: 450px;
 }
+
 /* block 2 */
 .hairdressing-services {
     text-align: center;
@@ -211,6 +231,12 @@ header {
 
 
 /* block 3 */
+.first-block-cosmetology {
+    padding-right: 20px;
+}
+.second-block-cosmetology {
+    padding-left: 30px;
+}
 .menu-cosmetology-services ul li::before {
     content: '✔';
     width: 20px;
@@ -225,19 +251,32 @@ header {
     color: #289404;
     padding-right: 5px;
 }
-
+.first-block-beauty-injections ul li{
+    padding-left: 50px;
+}
+.second-block-beauty-injections ul li{
+    padding-right: 129px;
+}
 /* block 5 */
 .sugaring-text {
     text-align: center;
 }
 .sugaring-image img {
-    margin: 40px 40px;
+    margin: 0 40px;
     height: 200px;
     width: 200px;
 }
+.about-sugaring {
+    padding: 0 0 20px 50px;
+}
+.about-sugaring p{
+    text-align: left;
+}
 
 /* block 6 */
-
+.sub-list li {
+   padding-left: 50px;
+}
 /* block 7*/
 .make h2 {
     text-align: center;
@@ -291,7 +330,7 @@ header {
 }
 .title-pages {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 .row-pages-left{
     margin-right: 20px;
@@ -301,7 +340,7 @@ header {
 }
 .block-flex ul li {
     list-style: none;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
 }
 .block-flex ul li::before{
@@ -311,9 +350,9 @@ header {
     padding-right: 5px;
 }
 .block-flex .sub-list li::before{
-    content: '●';
+    content: '-';
     width: 20px;
-    color: #289404;
+    color: black;
     padding-right: 5px;
 }
 
@@ -350,33 +389,67 @@ header {
 .study-cosmetology {
     padding: 10px 40px;
 }
-
-/* block 2-study */
-.for-who h1 a {
-    color: black;
-    text-decoration: none;
+.menu-study ul a:hover{
+    color: #289404;
 }
+.text-left-block-center li{
+    display: block;
+ }
+ .text-left-block-center ul {
+     display: inline-block;
+     text-align: left;
+     padding: 0 5px 0 25px;
+ }
+/* block 2-study */
 
 /* block 3-study*/
-.row-doc {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.doc-text ul li {
+    padding: 0 20px;
 }
-
 /* block 4-study*/
-
+.tehnology-row ul li {
+    padding: 0 46px;
+}
 /* block 5-study*/
 .header-advantages a {
     text-decoration: none;
     color: white;
 }
-.advantages {
-    line-height: 2;
+/* block 6-study */
+/* block 7-study */
+/* block 8-study */
+/* block 9-study */
+/* block 10-study */
+/* block 11-study */
+.text-massage  li{
+    display: block;
 }
+.text-massage ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0 55px;
+}
+/* block 12-study */
+/* block 13-study */
+img.size-img.img-center {
+     margin: 0 55px;;
+}
+/* block 14-study */
+/* block 15-study */
+.text-cosmetic ul li {
+    padding-right: 30px;
+}
+/* block 16-study */
+
 /* до всіх блоків навчання */
 .block-study-two,
-.block-study-four {
+.block-study-four,
+.block-study-six,
+.block-study-eight,
+.block-study-ten,
+.block-study-twelve,
+.block-study-fourteen,
+.block-study-sixteen {
     padding: 20px 0;
     text-align: center;
     background-color: #EAEAEA;
@@ -384,16 +457,31 @@ header {
     font-family: 'Bad Script', cursive;
 }
 .block-study-three,
-.block-study-five {
+.block-study-five,
+.block-study-seven,
+.block-study-nine,
+.block-study-eleven,
+.block-study-thirteen,
+.block-study-fifteen {
     padding: 20px 0;
     text-align: center;
     background-color: #0f0f0f;
     color: white;
     font-family: 'Bad Script', cursive;
 }
+.row-doc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .row-left,
-.row-right {
-    padding: 20px 40px;
+.row-right,
+.row-center {
+    text-align: left;
+    padding: 10px 20px;
+}
+.text-center {
+    text-align: center;
 }
 .list-style ul li {
     font-size: 20px;
@@ -408,4 +496,47 @@ header {
 .size-img {
     height: 200px;
     width: 200px;
+    margin: 0 20px;
 }
+
+.image-wrapper-for-centering {
+    text-align: center;
+}
+
+.block-study-seven .list-style,
+.block-study-eight .list-style,
+.block-study-ten .list-style {
+    flex: 1 1 300px;
+}
+
+.block-study-seven .row-doc,
+.block-study-eight .row-doc,
+.block-study-ten .row-doc {
+    margin: auto;
+    max-width: 1000px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .menu a {
+       font-size: 30px;
+    }
+  }
+
+/*
+щоб зробити блок по центру а текст по ліву сторону
+*/
+
+.list-style.advantages li {
+    display: block;
+}
+
+.list-style.advantages ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0 5px 0 25px;
+}
+
+/*
+щоб зробити блок по центру а текст по ліву сторону
+*/
