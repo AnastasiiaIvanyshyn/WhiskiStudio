@@ -23,35 +23,6 @@ header {
     line-height: 0.7em;
     padding-top: 25px;
 }
-@media only screen and (max-width: 768px) { 
-    .logo h1 {
-        font-size: 88px;
-        height: 190px;
-    }
-    
-    nav .menu {
-        height: 60px;
-    }
-    .for-who li{
-        display: block;
-    }
-    .for-who ul {
-        display: inline-block;
-        text-align: left;
-        padding: 0 10px 0 20px;
-    }
-    .img-top {
-        width: 350px;
-        height: 110px;
-        margin: 0 50px;
-    }
-    .img-bot {
-        height: 102px;
-        width: 394px;
-        margin: 0 50px;
-    }
-}
-
 
 .logo a {
     color: white;
@@ -204,6 +175,8 @@ header {
 .img-top {
     width:400px;
     height: 150px;
+    position: relative;
+    left: 30px;
 }
 .page-services-menu h1 {
     text-align: center;
@@ -379,15 +352,15 @@ header {
     color: #289404;
     padding-right: 5px;
 }
-.study img{
+.study .study-image-wrapper-box {
     margin-top: 50px;
 }
 .study {
-    padding: 10px 40px;
+    padding: 10px 20px;
     text-align: center;
 }
 .study-cosmetology {
-    padding: 10px 40px;
+    padding: 10px 20px;
 }
 .menu-study ul a:hover{
     color: #289404;
@@ -398,7 +371,7 @@ header {
  .text-left-block-center ul {
      display: inline-block;
      text-align: left;
-     padding: 0 5px 0 25px;
+     padding-left: 170px;
  }
 /* block 2-study */
 
@@ -539,4 +512,74 @@ img.size-img.img-center {
 
 /*
 щоб зробити блок по центру а текст по ліву сторону
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) { 
+    .logo h1 {
+        font-size: 88px;
+        height: 190px;
+    }
+    
+    nav .menu {
+        height: 60px;
+    }
+    .for-who li{
+        display: block;
+    }
+    .for-who ul {
+        display: inline-block;
+        text-align: left;
+        padding: 0 10px 0 20px;
+    }
+    .page-services-menu .img-top {
+        width: 316px;
+        height: 110px;
+        position: relative;
+        left: 20px;
+    }
+    .page-services-menu .img-bot {
+        height: 102px;
+        width: 350px;
+        /* margin: 0 50px; */
+    }
+
+    .study .text-left-block-center ul {
+        padding: 0;
+    }
+
+    .study .study-image-wrapper-box {
+        margin-top: 0;
+    }
+
+    .study-cosmetology h1 {
+        text-align: center;
+    }
+
+    .block-study-three .img-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+
+    .block-study-thirteen .row-left {
+        width: 100%;
+    }
+}
+
+/*
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                                                              !!!
+!!!   НЕ ПИСАТИ СТИЛІ ЗА ЦИМ БЛОКОМ. ВСІ НОВІ СТИЛІ ПИСАТИ ПЕРЕД БЛОКОМ @media   !!!
+!!!                                                                              !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */

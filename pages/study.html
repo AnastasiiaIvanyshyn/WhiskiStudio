@@ -48,9 +48,11 @@
 				<li><a href="#advantages">Переваги</a></li>
 			</ul>
 			</div>
-			<img class="size-img" src="image/study-menu-2.png">
-			<img class="size-img" src="image/study-menu.png">
-			<img class="size-img" src="image/study-menu-1.png">
+			<div class="image-wrapper-box study-image-wrapper-box">
+				<img class="size-img" src="image/study-menu-2.png">
+				<img class="size-img" src="image/study-menu.png">
+				<img class="size-img" src="image/study-menu-1.png">
+			</div>
 		</div>
 		<div class="study-cosmetology">
 			<h1>Навчання "Косметологія"</h1>
@@ -92,14 +94,18 @@
 					<li>копія паспорта 1,2 сторінка</li>
 					<li>прописка</li>
 				</ul>
-				<img class="size-img" src="image/document-2.png">
+				<div class="img-wrapper">
+					<img class="size-img" src="image/document-2.png">
+				</div>
 			</div>
 			<div class="row-right list-style doc-text">
 				<ul>
 					<li>індифікаційний код</li>
 					<li>санітарна книжка</li>
 				</ul>
-				<img class="size-img" src="image/document-1.png">
+				<div class="img-wrapper">
+					<img class="size-img" src="image/document-1.png">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -458,40 +464,12 @@
 			</div>
 		</div>
     </footer>
-	<script>
-		// Create a clone of the menu, right next to original.
-		$('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
-
-		scrollIntervalID = setInterval(stickIt, 10);
-
-
-		function stickIt() {
-
-			var orgElementPos = $('.original').offset();
-			orgElementTop = orgElementPos.top;
-
-			if ($(window).scrollTop() >= (orgElementTop)) {
-				// scrolled past the original position; now only show the cloned, sticky element.
-
-				// Cloned element should always have same left position and width as original element.     
-				orgElement = $('.original');
-				coordsOrgElement = orgElement.offset();
-				leftOrgElement = coordsOrgElement.left;
-				widthOrgElement = orgElement.css('width');
-				$('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement).show();
-				$('.original').css('visibility', 'hidden');
-			} else {
-				// not scrolled past the menu; only show the original menu.
-				$('.cloned').hide();
-				$('.original').css('visibility', 'visible');
-			}
-		}
-	</script>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js"></script>
 <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 <script src="../script.js"></script>
+<script src="../stick-menu.js"></script>
 
 </html>
