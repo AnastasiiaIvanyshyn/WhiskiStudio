@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../main.css" rel="stylesheet">
-    <link href="../slider.css" rel="stylesheet">
-    <link rel="stylesheet" href="../bootstrap-grid.min.css">
+
     <link href="http://uk.allfont.net/allfont.css?fonts=stencil" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
@@ -17,8 +15,11 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="../jquery.mCustomScrollbar.min.css" rel=stylesheet></link>
-    <script src="../jquery.mCustomScrollbar.concat.min.js"></script>
+    <link href="../libs/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="../libs/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel=stylesheet></link>
+    <script src="../libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link href="../libs/slider/slider.css" rel="stylesheet">
+    <link href="../main.css" rel="stylesheet">
     <title>Whiski studio - салон краси</title>
 </head>
 
@@ -37,7 +38,7 @@
                 <a href="../index.html">Головна</a>
                 <a class="active-menu-item" href="services.html">Послуги</a>
                 <a href="study.html">Навчання</a>
-                <a href="#">Контакти</a>
+                <a class="contacts-menu-item" href="#">Контакти</a>
             </div>
         </nav>
         
@@ -51,14 +52,14 @@
         </div>
         <div class="list-services-menu">
             <ul class="">
-                <li><a href="#hairdressing-service" class="">Перукарські послуги</a></li>
-                <li><a href="#cosmetology-service" class="">Косметолог</a></li>
-                <li><a href="#beauty-injections" class="">Ін'єкції краси</a></li>
-                <li><a href="#sugaring" class="">Шугаринг \ віск</a></li>
-                <li><a href="#brows" class="">Бровіст</a></li>
-                <li><a href="#make-up" class="">Всі види перманентного макіяжу</a></li>
-                <li><a href="#cosmetology-apparatus" class="">Апарати косметології</a></li>
-                <li><a href="#manicure-pedicure" class="">Манікюр \ педикюр</a></li>
+                <li><a href="#" class="hairdressing-service-anchor">Перукарські послуги</a></li>
+                <li><a href="#" class="cosmetology-service-anchor">Косметолог</a></li>
+                <li><a href="#" class="beauty-injections-anchor">Ін'єкції краси</a></li>
+                <li><a href="#" class="sugaring-anchor">Шугаринг \ віск</a></li>
+                <li><a href="#" class="brows-anchor">Бровіст</a></li>
+                <li><a href="#" class="make-up-anchor">Всі види перманентного макіяжу</a></li>
+                <li><a href="#" class="cosmetology-apparatus-anchor">Апарати косметології</a></li>
+                <li><a href="#" class="manicure-pedicure-anchor">Манікюр \ педикюр</a></li>
             </ul>
         </div>
     </div>
@@ -273,12 +274,20 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js"></script>
-<script src="../stick-menu.js"></script>
+<script src="../libs/stick-menu.js"></script>
+<script src="../script.js"></script>
 
 <script>
 $(window).on("load",function(){
-    $(".scroller").mCustomScrollbar({autoHideScrollbar: true});
-    $("a").on("click", function(){$(".scroller").mCustomScrollbar("scrollTo", "#contact-service")});
+    initCustomScrollbar();
+    addScrollOnClick(".contacts-menu-item", "#contact-service");
+    addScrollOnClick(".hairdressing-service-anchor", "#hairdressing-service");
+    addScrollOnClick(".cosmetology-service-anchor", "#cosmetology-service");
+    addScrollOnClick(".sugaring-anchor", "#sugaring");
+    addScrollOnClick(".brows-anchor", "#brows");
+    addScrollOnClick(".make-up-anchor", "#make-up");
+    addScrollOnClick(".cosmetology-apparatus-anchor", "#cosmetology-apparatus");
+    addScrollOnClick(".manicure-pedicure-anchor", "#manicure-pedicure");
 });
 </script>
 

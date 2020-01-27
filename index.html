@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="main.css" rel="stylesheet">
-    <link href="slider.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="whiski studio, салон краси whiski studio, салон краси, салон краси Івано-Франківськ">
+
     <link href="http://uk.allfont.net/allfont.css?fonts=stencil" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
@@ -15,14 +15,20 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
-    <meta name="keywords" content="whiski studio, салон краси whiski studio, салон краси, салон краси Івано-Франківськ">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <link href="./libs/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel=stylesheet></link>
+    <script src="./libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link href="./libs/slider/slider.css" rel="stylesheet">
+    <link href="./libs/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <title>Whiski studio - салон краси</title>
 </head>
 
 <body>
+    <div class="scroller">
     <header>
         <div class="logo">
             <h1>
@@ -34,7 +40,7 @@
             <div class="menu">
                 <a href="pages/services.html">Послуги</a>
                 <a href="pages/study.html">Навчання</a>
-                <a href="#contact">Контакти</a>
+                <a class="contacts-menu-item" href="#">Контакти</a>
             </div>
         </nav>
        
@@ -84,12 +90,18 @@
 			</div>
 		</div>
     </footer>
+    </div>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js"></script>
-<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="./libs/stick-menu.js"></script>
+<script src="./libs/slider/slider.js"></script>
 <script src="script.js"></script>
-<script src="stick-menu.js"></script>
+
+<script>
+    $(window).on("load",function(){
+        initCustomScrollbar();
+        addScrollOnClick(".contacts-menu-item", "#contact");
+    });
+</script>
 
 </html>
