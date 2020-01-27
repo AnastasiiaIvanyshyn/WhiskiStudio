@@ -1,6 +1,11 @@
 body {
     background-image: url("image/bg-body.jpg");
 }
+
+.scroller {
+    height: 100vh;
+}
+
 header {
     background-image: url('image/2.jpg');
 }
@@ -18,7 +23,7 @@ header {
     font-size: 172px;
     margin: 0;
     text-align: center;
-    font-family: 'Stencil', arial;
+    font-family: 'Stencil', arial !important; 
     font-weight: 100;
     line-height: 0.7em;
     padding-top: 25px;
@@ -146,14 +151,16 @@ header {
     color: white;
     background-color: #0f0f0f;
     /*font-family: 'Open Sans Condensed', sans-serif;*/
-    font-family: 'Bad Script', cursive;
+    /*font-family: 'Bad Script', cursive;*/
+    font-family: 'Cuprum', sans-serif;
 }
 .list-services-menu {
-    padding: 40px 20px;
+    padding: 70px 20px;
 }
 .list-services-menu li {
     list-style: none;
-    font-size: 20px;
+    font-size: 23px;
+line-height: 1.7;
 }
 .list-services-menu ul a {
     list-style: none;
@@ -201,6 +208,10 @@ header {
 .men-hairdressing-services {
     margin: 0 50px;
 }
+.women-hairdressing-services h2, 
+.men-hairdressing-services h2 {
+    padding: 15px 0 20px 0;
+}
 
 
 /* block 3 */
@@ -209,6 +220,7 @@ header {
 }
 .second-block-cosmetology {
     padding-left: 30px;
+    margin-left: 0;
 }
 .menu-cosmetology-services ul li::before {
     content: '✔';
@@ -226,9 +238,11 @@ header {
 }
 .first-block-beauty-injections ul li{
     padding-left: 50px;
+    margin-left: 20px;
 }
 .second-block-beauty-injections ul li{
     padding-right: 129px;
+    margin: 0 20px 0 20px;
 }
 /* block 5 */
 .sugaring-text {
@@ -239,15 +253,23 @@ header {
     height: 200px;
     width: 200px;
 }
-.about-sugaring {
-    padding: 0 0 20px 50px;
-}
-.about-sugaring p{
+
+.services-menu.block-five .about-sugaring,
+.services-menu.block-five .about-wax {
+    flex: 1 1 300px;
+    margin: 0;
+    padding: 0 25px;
     text-align: left;
 }
 
+.about-sugaring p,
+.about-wax p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
 /* block 6 */
-.sub-list li {
+.sub-list  {
    padding-left: 50px;
 }
 /* block 7*/
@@ -261,7 +283,7 @@ header {
 }
 
 /* block 8 */
-.apparatus h2 {
+.apparatus  {
     text-align: center;
 }
 .apparatus img {
@@ -279,7 +301,8 @@ header {
 /* до всіх блоків */
 .services-menu {
     /*font-family: 'Open Sans Condensed', sans-serif;*/
-    font-family: 'Bad Script', cursive;
+   /* font-family: 'Bad Script', cursive; */
+   font-family: 'Cuprum', sans-serif;
     padding: 50px 0 50px 0;
 }
 .block-flex {
@@ -303,7 +326,7 @@ header {
 }
 .title-pages {
     text-align: center;
-    padding-bottom: 5px;
+    padding: 0 5px 25px 25px;
 }
 .row-pages-left{
     margin-right: 20px;
@@ -315,6 +338,7 @@ header {
     list-style: none;
     text-align: left;
     font-size: 20px;
+    padding: 5px 0;
 }
 .block-flex ul li::before{
     content: '✔';
@@ -336,15 +360,17 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     color: white;
-    font-family: 'Bad Script', cursive;
+    /*font-family: 'Bad Script', cursive;*/
+    font-family: 'Cuprum', sans-serif;
 }
 .menu-study ul li {
     list-style: none;
 }
 .menu-study ul li a {
+    line-height: 1.7;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 23px;
 }
 .menu-study ul li::before{
     content: '►';
@@ -380,8 +406,8 @@ header {
     padding: 0 20px;
 }
 /* block 4-study*/
-.tehnology-row ul li {
-    padding: 0 46px;
+.block-study-four .list-style {
+    flex: 0 1 300px;
 }
 /* block 5-study*/
 .header-advantages a {
@@ -427,7 +453,8 @@ img.size-img.img-center {
     text-align: center;
     background-color: #EAEAEA;
     color: black;
-    font-family: 'Bad Script', cursive;
+    /*font-family: 'Bad Script', cursive;*/
+    font-family: 'Cuprum', sans-serif;
 }
 .block-study-three,
 .block-study-five,
@@ -440,7 +467,8 @@ img.size-img.img-center {
     text-align: center;
     background-color: #0f0f0f;
     color: white;
-    font-family: 'Bad Script', cursive;
+   /* font-family: 'Bad Script', cursive;*/
+   font-family: 'Cuprum', sans-serif;
 }
 .row-doc {
     display: flex;
@@ -457,8 +485,9 @@ img.size-img.img-center {
     text-align: center;
 }
 .list-style ul li {
-    font-size: 20px;
+    font-size: 22px;
     list-style: none;
+    line-height: 1.7;
 }
 .list-style ul li::before {
     content: '✔';
@@ -515,9 +544,14 @@ img.size-img.img-center {
 */
 
 
+.active-menu-item {
+    transition: 0.5s;
+    border-bottom: 5px solid #195E01;
+}
 
-
-
+.scroller .mCSB_inside > .mCSB_container {
+    margin-right: 0;
+}
 
 
 
@@ -529,10 +563,19 @@ img.size-img.img-center {
     .logo h1 {
         font-size: 88px;
         height: 190px;
+        font-family: 'Allerta Stencil', sans-serif !important;
+        font-weight: bold;
     }
     
     nav .menu {
         height: 60px;
+    }
+    .menu a {
+        padding: 15px 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 5vw;
+        font-family: 'Oswald', sans-serif;
     }
     .for-who li{
         display: block;
@@ -573,6 +616,25 @@ img.size-img.img-center {
 
     .block-study-thirteen .row-left {
         width: 100%;
+    }
+    .block-study-four .row-right{
+        padding-top: 0;
+    }
+    .block-study-four .row-left {
+        padding-bottom: 0;
+    }
+    .block-study-seven .list-style,
+    .block-study-eight .list-style,
+    .block-study-ten .list-style,
+    .block-study-fifteen .row-left {
+        padding: 0 20px;
+    }
+    .menu-cosmetology-services .first-block-cosmetology,
+    .menu-cosmetology-services .second-block-cosmetology {
+        padding: 0 20px;
+    }
+    .menu-cosmetology-services .second-block-cosmetology {
+        margin-left: 0;
     }
 }
 

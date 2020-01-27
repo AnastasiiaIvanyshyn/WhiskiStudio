@@ -17,10 +17,14 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="../jquery.mCustomScrollbar.min.css" rel=stylesheet></link>
+    <script src="../jquery.mCustomScrollbar.concat.min.js"></script>
     <title>Whiski studio - салон краси</title>
 </head>
 
 <body>
+
+<div class="scroller">
     <header>
         <div class="logo">
             <h1>
@@ -31,9 +35,9 @@
         <nav>
             <div class="menu">
                 <a href="../index.html">Головна</a>
-                <a href="services.html">Послуги</a>
+                <a class="active-menu-item" href="services.html">Послуги</a>
                 <a href="study.html">Навчання</a>
-                <a href="#contact-service">Контакти</a>
+                <a href="#">Контакти</a>
             </div>
         </nav>
         
@@ -54,7 +58,7 @@
                 <li><a href="#brows" class="">Бровіст</a></li>
                 <li><a href="#make-up" class="">Всі види перманентного макіяжу</a></li>
                 <li><a href="#cosmetology-apparatus" class="">Апарати косметології</a></li>
-                <li><a href="#manicure-pedicure" class="">Маникюр \ педикюр</a></li>
+                <li><a href="#manicure-pedicure" class="">Манікюр \ педикюр</a></li>
             </ul>
         </div>
     </div>
@@ -82,16 +86,14 @@
                 <ul class="">
                     <li>Глибоке очищення</li>
                     <li>Чистка</li>
-                    <li>Контурна пластика</li>
                     <li>Кислотні пілінги</li>
                     <li>Масажі (обличчя, шия, декольте)</li>
                 </ul>
             </div>
-            <div class="row-pages-left second-block-cosmetology">
+            <div class="row-pages-right second-block-cosmetology">
                 <ul class="">
                     <li>Карбокситерапія (обличчя, шиї, декольте)</li>
                     <li>Карбонова маска (обличчя, шия, декольте)</li>
-                    <li>Ультразвукова терапія</li>
                     <li>Маски</li>
                     <li>Догляд</li>
                 </ul>
@@ -106,15 +108,14 @@
             <div class="row-pages-left first-block-beauty-injections">
                 <ul class="">
                     <li>Батулінотерапія</li>
-                    <li>Мезонитки (лістинг обличчя, шиї, декольте, тіла)</li>
                     <li>Біоревіталізація</li>
                 </ul>
             </div>
             <div class="row-pages-right second-block-beauty-injections">
                 <ul class="">
                     <li>Мезотерапія</li>
-                    <li>ЕМЕТ</li>
-                    <li>Догляд за тілом</li>
+                    <li>Контурна пластика</li>
+                    <li>Тредліфтинг</li>
                 </ul>
             </div>
         </div>
@@ -124,14 +125,15 @@
         <h1 class="title-pages header-sugaring"><a id="sugaring">Шугаринг \ віск</a></h1>
         <div class="block-flex sugaring-text">
             <div class="row-pages-left about-sugaring">
-                <p> <b>Шугаринг</b> - спосіб епіляції, який виконується<br>
-                    за допомогою густої цукрової пасти.<br>
-                    Пасту розподіляють по ділянці шкіри<br>
-                    і видаляють разом з волосинами.</p>
+                <p> <b>Шугаринг</b> - спосіб епіляції, який виконується
+                    за допомогою густої цукрової пасти.
+                    Пасту розподіляють по ділянці шкіри
+                    і видаляють разом з волосинами.
+                </p>
             </div>
             <div class="row-pages-right about-wax">
-                <P><b>Біоепіляція воском</b> – це видалення волосся <br>
-                    за допомогою натурального засобу – воску.</P>
+                <p><b>Біоепіляція воском</b> – це видалення волосся
+                    за допомогою натурального засобу – воску.</p>
             </div>
         </div>
         <div class="block-flex sugaring-image">
@@ -214,7 +216,7 @@
     <div class="services-menu block-nine">
         <h1 class="title-pages header-cosmetology-apparatus">
             <a id="manicure-pedicure">
-                Маникюр \ педикюр </a></h1>
+                Манікюр \ педикюр </a></h1>
         <div class="block-flex">
 
             <img class="manicure" src="image/manicure-2.png">
@@ -264,13 +266,21 @@
 			</div>
 		</div>
     </footer>
+    
+</div>
+
 </body>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js"></script>
-<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-<script src="../script.js"></script>
 <script src="../stick-menu.js"></script>
+
+<script>
+$(window).on("load",function(){
+    $(".scroller").mCustomScrollbar({autoHideScrollbar: true});
+    $("a").on("click", function(){$(".scroller").mCustomScrollbar("scrollTo", "#contact-service")});
+});
+</script>
+
 
 </html>
