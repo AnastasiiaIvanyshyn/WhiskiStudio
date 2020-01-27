@@ -629,6 +629,12 @@ img.size-img.img-center {
     .block-study-fifteen .row-left {
         padding: 0 20px;
     }
+    .block-study-fifteen .list-style {
+        text-align: center;
+    }
+    .block-study-fifteen .list-style ul {
+        text-align: left;
+    }
     .menu-cosmetology-services .first-block-cosmetology,
     .menu-cosmetology-services .second-block-cosmetology {
         padding: 0 20px;
