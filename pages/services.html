@@ -52,19 +52,20 @@
         </div>
         <div class="list-services-menu">
             <ul class="">
-                <li><a href="#" class="hairdressing-service-anchor">Перукарські послуги</a></li>
-                <li><a href="#" class="cosmetology-service-anchor">Косметолог</a></li>
-                <li><a href="#" class="beauty-injections-anchor">Ін'єкції краси</a></li>
-                <li><a href="#" class="sugaring-anchor">Шугаринг \ віск</a></li>
-                <li><a href="#" class="brows-anchor">Бровіст</a></li>
-                <li><a href="#" class="make-up-anchor">Всі види перманентного макіяжу</a></li>
-                <li><a href="#" class="cosmetology-apparatus-anchor">Апарати косметології</a></li>
-                <li><a href="#" class="manicure-pedicure-anchor">Манікюр \ педикюр</a></li>
+                <li><a href="#" class="hairdressing-service">Перукарські послуги</a></li>
+                <li><a href="#" class="cosmetology-service">Косметолог</a></li>
+                <li><a href="#" class="beauty-injections">Ін'єкції краси</a></li>
+                <li><a href="#" class="sugaring">Шугаринг \ віск</a></li>
+                <li><a href="#" class="brows">Бровіст</a></li>
+                <li><a href="#" class="make-up">Всі види перманентного макіяжу</a></li>
+                <li><a href="#" class="cosmetology-apparatus">Апарати косметології</a></li>
+                <li><a href="#" class="manicure-pedicure">Манікюр \ педикюр</a></li>
             </ul>
         </div>
     </div>
 
     <div class="services-menu block-two">
+        <div id="hairdressing-service-anchor" class="block-anchor"></div>
         <h1 class="title-pages header-hairdressing-service">
             <a id="hairdressing-service">Перукарські послуги</a></h1>
         <div class="block-flex hairdressing-services">
@@ -80,6 +81,7 @@
     </div>
 
     <div class="services-menu block-three">
+        <div id="cosmetology-service-anchor" class="block-anchor"></div>
         <h1 class="title-pages header-cosmetology-services">
             <a id="cosmetology-service">Косметолог</a></h1>
         <div class="block-flex menu-cosmetology-services">
@@ -103,6 +105,7 @@
     </div>
 
     <div class="services-menu block-four">
+        <div id="beauty-injections-anchor" class="block-anchor"></div>
         <h1 class="title-pages header-beauty-injections">
             <a id="beauty-injections">Ін'єкції краси</a></h1>
         <div class="block-flex menu-beauty-injections">
@@ -123,6 +126,7 @@
     </div>
 
     <div class="services-menu block-five">
+        <div id="sugaring-anchor" class="block-anchor"></div>
         <h1 class="title-pages header-sugaring"><a id="sugaring">Шугаринг \ віск</a></h1>
         <div class="block-flex sugaring-text">
             <div class="row-pages-left about-sugaring">
@@ -154,6 +158,7 @@
     </div>
 
     <div class="services-menu block-six">
+        <div id="brows-anchor" class="block-anchor"></div>
         <h1 class="title-pages header-brows"><a id="brows">Бровіст</a></h1>
         <div class="block-flex">
             <div class="row-pages-left image-brows">
@@ -176,6 +181,7 @@
     </div>
 
     <div class="services-menu block-seven">
+        <div id="make-up-anchor" class="block-anchor"></div>
         <h1 class="title-pages header-make-up">
             <a id="make-up">Всі види перманентного макіяжу</a></h1>
         <div class="block-flex make-up">
@@ -199,6 +205,7 @@
     </div>
 
     <div class="services-menu block-eight">
+        <div id="cosmetology-apparatus-anchor" class="block-anchor"></div>
         <h1 class="title-pages header-cosmetology-apparatus">
             <a id="cosmetology-apparatus">
                 Апарати косметології</a></h1>
@@ -215,6 +222,7 @@
     </div>
 
     <div class="services-menu block-nine">
+        <div id="manicure-pedicure-anchor" class="block-anchor"></div>
         <h1 class="title-pages header-cosmetology-apparatus">
             <a id="manicure-pedicure">
                 Манікюр \ педикюр </a></h1>
@@ -281,13 +289,15 @@
 $(window).on("load",function(){
     initCustomScrollbar();
     addScrollOnClick(".contacts-menu-item", "#contact-service");
-    addScrollOnClick(".hairdressing-service-anchor", "#hairdressing-service");
-    addScrollOnClick(".cosmetology-service-anchor", "#cosmetology-service");
-    addScrollOnClick(".sugaring-anchor", "#sugaring");
-    addScrollOnClick(".brows-anchor", "#brows");
-    addScrollOnClick(".make-up-anchor", "#make-up");
-    addScrollOnClick(".cosmetology-apparatus-anchor", "#cosmetology-apparatus");
-    addScrollOnClick(".manicure-pedicure-anchor", "#manicure-pedicure");
+
+    addScrollOnClick(".hairdressing-service", "#hairdressing-service-anchor");
+    addScrollOnClick(".cosmetology-service", "#cosmetology-service-anchor");
+    addScrollOnClick(".beauty-injections", "#beauty-injections-anchor");
+    addScrollOnClick(".sugaring", "#sugaring-anchor");
+    addScrollOnClick(".brows", "#brows-anchor");
+    addScrollOnClick(".make-up", "#make-up-anchor");
+    addScrollOnClick(".cosmetology-apparatus", "#cosmetology-apparatus-anchor");
+    addScrollOnClick(".manicure-pedicure", "#manicure-pedicure-anchor");
 });
 </script>
 

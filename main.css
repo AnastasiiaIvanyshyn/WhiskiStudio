@@ -303,8 +303,9 @@ line-height: 1.7;
 .services-menu {
     /*font-family: 'Open Sans Condensed', sans-serif;*/
    /* font-family: 'Bad Script', cursive; */
-   font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', sans-serif;
     padding: 50px 0 50px 0;
+    position: relative;
 }
 .block-flex {
     display: flex;
@@ -554,6 +555,15 @@ img.size-img.img-center {
     margin-right: 0;
 }
 
+.block-study {
+    position: relative;
+}
+
+.block-anchor {
+    position: absolute;
+    top: -100px;
+}
+
 
 
 
@@ -643,6 +653,9 @@ img.size-img.img-center {
     }
     .menu-cosmetology-services .second-block-cosmetology {
         margin-left: 0;
+    }
+    .block-anchor {
+        top: -60px;
     }
 }
 
