@@ -62,17 +62,17 @@
 		<div class="study-cosmetology">
 			<h1>Навчання "Косметологія"</h1>
 			<ul>
-				<li><a href="#cosmetology-like-since">Косметологія як наука. Історія її виникнення</a></li>
-				<li><a href="#anatomy">Основи анатомії та фізіології людини</a></li>
-				<li><a href="#dermatology">Основи дерматовенерології, шкірні хвороби</a></li>
-				<li><a href="#hygiene">Санітарія й гігієна</a></li>
-				<li><a href="#hardware-cosmetology">Апаратна косметологія</a></li>
-				<li><a href="#cosmetic-massage">Косметичний масаж</a></li>
-				<li><a href="#peeling">Пілінги</a></li>
-				<li><a href="#clear-face">Гігієнічна чистка обличчя</a></li>
-				<li><a href="#masks">Маски</a></li>
-				<li><a href="#cosmetic">Засоби, сировини та їх використання в косметології:</a></li>
-				<li><a href="#protocols">Протоколи проведення косметичних процедур</a></li>
+				<li><a class="cosmetology-like-since-anchor" href="#">Косметологія як наука. Історія її виникнення</a></li>
+				<li><a class="anatomy-anchor" href="#">Основи анатомії та фізіології людини</a></li>
+				<li><a class="dermatology-anchor" href="#">Основи дерматовенерології, шкірні хвороби</a></li>
+				<li><a class="hygiene-anchor" href="#">Санітарія й гігієна</a></li>
+				<li><a class="hardware-cosmetology-anchor" href="#">Апаратна косметологія</a></li>
+				<li><a class="cosmetic-massage-anchor" href="#">Косметичний масаж</a></li>
+				<li><a class="peeling-anchor" href="#">Пілінги</a></li>
+				<li><a class="clear-face-anchor" href="#">Гігієнічна чистка обличчя</a></li>
+				<li><a class="masks-anchor" href="#">Маски</a></li>
+				<li><a class="cosmetic-anchor" href="#">Засоби, сировини та їх використання в косметології:</a></li>
+				<li><a class="protocols-anchor" href="#">Протоколи проведення косметичних процедур</a></li>
 			</ul>
 		</div>
 	</div>
@@ -482,10 +482,23 @@
 $(window).on("load",function(){
     initCustomScrollbar();
 	addScrollOnClick(".contacts-menu-item", "#contact-learn");
+	
 	addScrollOnClick(".for-who-anchor", "#for-who");
 	addScrollOnClick(".document-anchor", "#document");
 	addScrollOnClick(".document-tehnology-anchor", "#document-tehnology");
 	addScrollOnClick(".advantages-anchor", "#advantages");
+
+	addScrollOnClick(".cosmetology-like-since-anchor", "#cosmetology-like-since");
+	addScrollOnClick(".anatomy-anchor", "#anatomy");
+	addScrollOnClick(".dermatology-anchor", "#dermatology");
+	addScrollOnClick(".hygiene-anchor", "#hygiene");
+	addScrollOnClick(".hardware-cosmetology-anchor", "#hardware-cosmetology");
+	addScrollOnClick(".cosmetic-massage-anchor", "#cosmetic-massage");
+	addScrollOnClick(".peeling-anchor", "#peeling");
+	addScrollOnClick(".clear-face-anchor", "#clear-face");
+	addScrollOnClick(".masks-anchor", "#masks");
+	addScrollOnClick(".cosmetic-anchor", "#cosmetic");
+	addScrollOnClick(".protocols-anchor", "#protocols");
 });
 </script>
 
