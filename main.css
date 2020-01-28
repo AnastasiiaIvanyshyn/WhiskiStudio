@@ -632,6 +632,7 @@ img.size-img.img-center {
     }
     .block-study-fifteen .list-style {
         text-align: center;
+        width: 100%;
     }
     .block-study-fifteen .list-style ul {
         text-align: left;
